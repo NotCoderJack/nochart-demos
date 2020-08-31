@@ -22,10 +22,10 @@ class App extends Component<AppProps, AppState> {
   render() {
     return (
       <div>
+        <h3>选择图表类型，查看示例及自定义渲染</h3>
         <Router>
-          <Link to="/line">Line</Link>
-          <Link to="multi-line">MultiLine</Link>
-          <hr/>
+          <Link className="link" to="/line">Line</Link>
+          <Link className="link" to="multi-line">MultiLine</Link>
           <Switch>
             <Route path="/line">
               <Line />
